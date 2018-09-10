@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/订单系统/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/订单系统/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u286" class="ax_default _文本">
+        <div id="u286_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u287" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u288" class="ax_default box_2">
+        <div id="u288_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u289" class="text" style="visibility: visible;">
+          <p><span>规格说明：订单管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u290" class="ax_default _文本">
+        <div id="u290_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u291" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u292" class="ax_default box_2">
+        <div id="u292_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u293" class="text" style="visibility: visible;">
+          <p><span>单据信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u294" class="ax_default _文本">
+        <div id="u294_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u295" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单编号：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于识别订单的具有唯一性的标识。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">成单时间：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的形成时间（非支付时间）。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单状态：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于标识订单处于工作流程中的何种节点。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待付款：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，但系统未获得支付成功的通知。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待发货：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，但未录入快递运单号。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待收货：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，已录入快递运单号，但买家未确认收货。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已完成：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，已录入快递运单号，买家已确认收货。无论是否评价。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">退款/售后：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单处于退款/售后工作流时统一归于此节点。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u296" class="ax_default box_2">
+        <div id="u296_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u297" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u298" class="ax_default box_2">
+        <div id="u298_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u299" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u300" class="ax_default box_2">
+        <div id="u300_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u301" class="text" style="visibility: visible;">
+          <p><span>需求说明</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u302" class="ax_default _文本">
+        <div id="u302_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u303" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">建立订单系统，提供销售业务。订单系统分为以下 6 个部分：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">1. 单据信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单本身的单据信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">2. 支付信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的支付信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">3. 商品信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的商品信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">4. 物流信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的物流信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">5. 提成信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单成单后所形成的提成信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">6. 其他信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现其他相关信息。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u304" class="ax_default _文本">
+        <div id="u304_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u305" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u306" class="ax_default _文本">
+        <div id="u306_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u307" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u308" class="ax_default box_2">
+        <div id="u308_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u309" class="text" style="visibility: visible;">
+          <p><span>支付信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u310" class="ax_default _文本">
+        <div id="u310_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u311" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">支付时间：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的支付时间。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">支付方式：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的支付方式。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单总额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单未经优惠、减免的，并且包含所有应支付项的总金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">实付金额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单已经优惠、减免的，并且包含所有应支付项的总金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">优惠减免：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">因营销系统造成的优惠、减免项。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u312" class="ax_default box_2">
+        <div id="u312_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u313" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u314" class="ax_default box_2">
+        <div id="u314_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u315" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u316" class="ax_default _文本">
+        <div id="u316_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u317" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u318" class="ax_default _文本">
+        <div id="u318_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u319" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u320" class="ax_default box_2">
+        <div id="u320_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u321" class="text" style="visibility: visible;">
+          <p><span>商品信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u322" class="ax_default _文本">
+        <div id="u322_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u323" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">商品封面：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“商品系统 → 描述信息 → 封面图”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">商品名称：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“商品系统 → 描述信息 → 主标题”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">单价：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录该商品的单价。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">数量：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录当前订单所包含的该商品数量。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">积分：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录用户因购买该商品而获得的积分数量。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u324" class="ax_default box_2">
+        <div id="u324_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u325" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u326" class="ax_default box_2">
+        <div id="u326_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u327" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u328" class="ax_default _文本">
+        <div id="u328_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u329" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u330" class="ax_default _文本">
+        <div id="u330_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u331" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u332" class="ax_default box_2">
+        <div id="u332_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u333" class="text" style="visibility: visible;">
+          <p><span>物流信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u334" class="ax_default _文本">
+        <div id="u334_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u335" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;">邮寄信息</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">地址</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　收件人姓名：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　地区：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　详细地址：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　邮编：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　手机：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;">归属信息</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">姓名：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 个人资料”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">VIP卡号：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 个人资料”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">账号（手机）：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 个人资料”。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u336" class="ax_default box_2">
+        <div id="u336_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u337" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u338" class="ax_default box_2">
+        <div id="u338_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u339" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u340" class="ax_default _文本">
+        <div id="u340_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u341" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u342" class="ax_default _文本">
+        <div id="u342_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u343" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u344" class="ax_default box_2">
+        <div id="u344_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u345" class="text" style="visibility: visible;">
+          <p><span>提成信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u346" class="ax_default _文本">
+        <div id="u346_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u347" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成金额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单形成时所产生的提成金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成比例：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单提成形成时所遵循的提成比例。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成员工：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单提成形成时所授予的员工。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u348" class="ax_default box_2">
+        <div id="u348_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u349" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u350" class="ax_default box_2">
+        <div id="u350_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u351" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u352" class="ax_default _文本">
+        <div id="u352_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u353" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u354" class="ax_default _文本">
+        <div id="u354_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u355" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u356" class="ax_default box_2">
+        <div id="u356_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u357" class="text" style="visibility: visible;">
+          <p><span>其他信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u358" class="ax_default _文本">
+        <div id="u358_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u359" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">顾客备注：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单形成时，顾客对于当前订单的额外文字附注。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">员工备注：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录员工对于当前订单的额外文字附注。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u360" class="ax_default box_2">
+        <div id="u360_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u361" class="text" style="visibility: visible;">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u362" class="ax_default box_2">
+        <div id="u362_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u363" class="text" style="visibility: visible;">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

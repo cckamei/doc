@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/订单系统/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/订单系统/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u236" class="ax_default _文本">
+        <div id="u236_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u237" class="ax_default box_2">
+        <div id="u237_div" class=""></div>
+        <div id="u237_text" class="text ">
+          <p><span>规格说明：订单管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u238" class="ax_default _文本">
+        <div id="u238_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u239" class="ax_default box_2">
+        <div id="u239_div" class=""></div>
+        <div id="u239_text" class="text ">
+          <p><span>单据信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u240" class="ax_default _文本">
+        <div id="u240_div" class=""></div>
+        <div id="u240_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单编号：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于识别订单的具有唯一性的标识。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">成单时间：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的形成时间（非支付时间）。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单状态：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于标识订单处于工作流程中的何种节点。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待付款：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，但系统未获得支付成功的通知。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待发货：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，但未录入快递运单号。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　　　</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#0000FF;">注意：在订单列表里，待发货被合并到了“全部”里，但在“用户中心”有专门的入口筛选待发货订单。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待收货：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，已录入快递运单号，但买家未确认收货。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已完成：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单已形成，并支付成功，已录入快递运单号，买家已确认收货。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">退款/取消：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">订单处于退款中、已退款、已取消工作流时统一归于此节点。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已取消</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：订单处于待付款时，才可以取消订单。此动作无需审核。该状态的订单归入退款/取消标签。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">退款中</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：订单处于待发货/待收货时，只能申请退款，</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#FF0000;">需选择退款原因，然后申请审核</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">。该状态的订单归入退款/取消标签。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">　　　　</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已退款</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：退款申请被通过。该状态的订单归入退款/取消标签。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u241" class="ax_default box_2">
+        <div id="u241_div" class=""></div>
+        <div id="u241_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u242" class="ax_default box_2">
+        <div id="u242_div" class=""></div>
+        <div id="u242_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u243" class="ax_default box_2">
+        <div id="u243_div" class=""></div>
+        <div id="u243_text" class="text ">
+          <p><span>需求说明</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u244" class="ax_default _文本">
+        <div id="u244_div" class=""></div>
+        <div id="u244_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">建立订单系统，提供销售业务。订单系统分为以下 6 个部分：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">1. 单据信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单本身的单据信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">2. 支付信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的支付信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">3. 商品信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的商品信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">4. 物流信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单所包含的物流信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">5. 提成信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现订单成单后所形成的提成信息。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">6. 其他信息：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录、呈现其他相关信息。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u245" class="ax_default _文本">
+        <div id="u245_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u246" class="ax_default _文本">
+        <div id="u246_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u247" class="ax_default box_2">
+        <div id="u247_div" class=""></div>
+        <div id="u247_text" class="text ">
+          <p><span>支付信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u248" class="ax_default _文本">
+        <div id="u248_div" class=""></div>
+        <div id="u248_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">支付时间：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的支付时间。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">支付方式：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单的支付方式。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">订单总额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单未经优惠、减免的，并且包含所有应支付项的总金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">实付金额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单已经优惠、减免的，并且包含所有应支付项的总金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">优惠减免：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">因营销系统造成的优惠、减免项。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u249" class="ax_default box_2">
+        <div id="u249_div" class=""></div>
+        <div id="u249_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u250" class="ax_default box_2">
+        <div id="u250_div" class=""></div>
+        <div id="u250_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u251" class="ax_default _文本">
+        <div id="u251_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u252" class="ax_default _文本">
+        <div id="u252_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u253" class="ax_default box_2">
+        <div id="u253_div" class=""></div>
+        <div id="u253_text" class="text ">
+          <p><span>商品信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u254" class="ax_default _文本">
+        <div id="u254_div" class=""></div>
+        <div id="u254_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">商品封面：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“商品系统 → 描述信息 → 封面图”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">商品名称：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“商品系统 → 描述信息 → 主标题”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">单价：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录该商品的单价。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">数量：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录当前订单所包含的该商品数量。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">积分：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录用户因购买该商品而获得的积分数量。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u255" class="ax_default box_2">
+        <div id="u255_div" class=""></div>
+        <div id="u255_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u256" class="ax_default box_2">
+        <div id="u256_div" class=""></div>
+        <div id="u256_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u257" class="ax_default _文本">
+        <div id="u257_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u258" class="ax_default _文本">
+        <div id="u258_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u259" class="ax_default box_2">
+        <div id="u259_div" class=""></div>
+        <div id="u259_text" class="text ">
+          <p><span>物流信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u260" class="ax_default _文本">
+        <div id="u260_div" class=""></div>
+        <div id="u260_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;">邮寄信息</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">地址</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　收件人姓名：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　地区：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　详细地址：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　邮编：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">　　　　　手机：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">引用自“用户中心 → 我的地址”。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u261" class="ax_default box_2">
+        <div id="u261_div" class=""></div>
+        <div id="u261_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u262" class="ax_default box_2">
+        <div id="u262_div" class=""></div>
+        <div id="u262_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u263" class="ax_default _文本">
+        <div id="u263_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u264" class="ax_default _文本">
+        <div id="u264_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u265" class="ax_default box_2">
+        <div id="u265_div" class=""></div>
+        <div id="u265_text" class="text ">
+          <p><span>提成信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u266" class="ax_default _文本">
+        <div id="u266_div" class=""></div>
+        <div id="u266_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成金额：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单形成时所产生的提成金额。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成比例：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单提成形成时所遵循的提成比例。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">提成员工：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单提成形成时所授予的员工。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u267" class="ax_default box_2">
+        <div id="u267_div" class=""></div>
+        <div id="u267_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u268" class="ax_default box_2">
+        <div id="u268_div" class=""></div>
+        <div id="u268_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u269" class="ax_default _文本">
+        <div id="u269_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u270" class="ax_default _文本">
+        <div id="u270_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u271" class="ax_default box_2">
+        <div id="u271_div" class=""></div>
+        <div id="u271_text" class="text ">
+          <p style="font-size:14px;"><span style="color:#FF0000;">*[NEW]</span><span style="font-size:18px;">其他信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u272" class="ax_default _文本">
+        <div id="u272_div" class=""></div>
+        <div id="u272_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">顾客留言：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录订单形成时，顾客对于当前订单的额外文字附注。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">员工备注（后台）：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">用于记录员工对于当前订单的额外文字附注。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u273" class="ax_default box_2">
+        <div id="u273_div" class=""></div>
+        <div id="u273_text" class="text ">
+          <p><span>表单规格</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u274" class="ax_default box_2">
+        <div id="u274_div" class=""></div>
+        <div id="u274_text" class="text ">
+          <p><span>异常处理</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
