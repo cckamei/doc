@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单状态对接指南</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/订单状态对接指南/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/订单状态对接指南/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (图像) -->
+      <div id="u581" class="ax_default _图像">
+        <img id="u581_img" class="img " src="images/页面流转/u182.png"/>
+        <!-- Unnamed () -->
+        <div id="u582" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u583" class="ax_default sticky_3">
+        <div id="u583_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u584" class="text" style="visibility: visible;">
+          <p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待发货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">按钮(右)：联系客服</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">退款中</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">按钮(右)：查看退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">按钮(左)：联系客服</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">按钮(右)：查看退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">按钮(左)：联系客服</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF0000;">以上三种状态在左侧UI列表中没有，因此在这里补充。其他订单状态在“订单列表页面”中所包含的按钮都如 UI图（左图）所示。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u585" class="ax_default sticky_3">
+        <div id="u585_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u586" class="text" style="visibility: visible;">
+          <p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待付款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户待付款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：WAIT2PAY = 0</span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待发货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服待发货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：PAYED = 1</span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">待收货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服已发货，用户待收货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：SENT = 2</span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已完成</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服已发货，用户已收货</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：AFFIRMED = 3</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">退款中</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服待发货或者已发货，用户申请退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：REFUNDING = 4 </span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服待发货或者已发货，用户申请退款，客服批准退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：REFUNDED = 6</span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">拒绝退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户已付款，客服待发货或者已发货，用户申请退款，客服拒绝退款</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：没有独立的状态，它应该被回滚至</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#FF0000;">待发货</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">或者</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#FF0000;">待收货</span><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">，</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF0000;">同时 is_rejected 的布尔状态会变为 true 了。</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">此时，由于 is_rejected 的状态是 true ，所以再在待发货或者待收货的页面中点击&lt;申请退款&gt;打开的会是这样一个页面</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#0000FF;">is_rejected 所在的接口：</span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p><p style="font-size:20px;"><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">已取消</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">含义：用户未付款，用户取消订单并确认</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">状态：cancel = 8</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u587" class="ax_default">
+
+        <!-- Unnamed (图像) -->
+        <div id="u588" class="ax_default _图像">
+          <img id="u588_img" class="img " src="images/页面流转/u291.png"/>
+          <!-- Unnamed () -->
+          <div id="u589" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u590" class="ax_default ellipse">
+          <img id="u590_img" class="img " src="images/页面流转/u293.png"/>
+          <!-- Unnamed () -->
+          <div id="u591" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u592" class="ax_default box_2">
+          <div id="u592_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u593" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u594" class="ax_default label">
+          <div id="u594_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u595" class="text" style="visibility: visible;">
+            <p><span>10-09&nbsp; 9:00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u596" class="ax_default box_2">
+          <div id="u596_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u597" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u598" class="ax_default ellipse">
+          <img id="u598_img" class="img " src="images/页面流转/u293.png"/>
+          <!-- Unnamed () -->
+          <div id="u599" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本) -->
+        <div id="u600" class="ax_default _文本">
+          <img id="u600_img" class="img " src="resources/images/transparent.gif"/>
+          <!-- Unnamed () -->
+          <div id="u601" class="text" style="visibility: visible;">
+            <p><span>审核未通过</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u602" class="ax_default box_2">
+          <div id="u602_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u603" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u604" class="ax_default box_2">
+          <div id="u604_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u605" class="text" style="visibility: visible;">
+            <p><span>重新提交</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u606" class="ax_default box_1">
+          <div id="u606_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u607" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u608" class="ax_default _标题3">
+          <div id="u608_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u609" class="text" style="visibility: visible;">
+            <p><span>可以被编辑了</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u610" class="ax_default _标题3">
+          <div id="u610_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u611" class="text" style="visibility: visible;">
+            <p><span>按钮变成了“重新提交”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u612" class="ax_default sticky_3">
+          <div id="u612_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u613" class="text" style="visibility: visible;">
+            <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#FF0000;">这个页面是新的，UI没有，需要单独做！</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;color:#FF0000;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">← 如果用户曾经填写并提交过申请退款的表单，但被拒绝了，那么当他再次点击&lt;申请退款&gt;的按钮时，会呈现这样的页面样式。</span></p><p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;"><br></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u614" class="ax_default box_1">
+          <div id="u614_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u615" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u616" class="ax_default _标题3">
+          <div id="u616_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u617" class="text" style="visibility: visible;">
+            <p><span>字体 字号 字色，这两者应该一样</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u618" class="ax_default _连接符">
+        <img id="u618_seg0" class="img " src="images/订单状态对接指南/u618_seg0.png" alt="u618_seg0"/>
+        <img id="u618_seg1" class="img " src="images/订单状态对接指南/u618_seg1.png" alt="u618_seg1"/>
+        <img id="u618_seg2" class="img " src="images/订单状态对接指南/u618_seg2.png" alt="u618_seg2"/>
+        <img id="u618_seg3" class="img " src="images/订单状态对接指南/u618_seg3.png" alt="u618_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u619" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u620" class="ax_default box_2">
+        <div id="u620_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u621" class="text" style="visibility: visible;">
+          <p><span>状态码：1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u622" class="ax_default box_2">
+        <div id="u622_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u623" class="text" style="visibility: visible;">
+          <p><span>状态码：4</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u624" class="ax_default box_2">
+        <div id="u624_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u625" class="text" style="visibility: visible;">
+          <p><span>状态码：6</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图像) -->
+      <div id="u626" class="ax_default _图像">
+        <img id="u626_img" class="img " src="images/订单状态对接指南/u626.png"/>
+        <!-- Unnamed () -->
+        <div id="u627" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
